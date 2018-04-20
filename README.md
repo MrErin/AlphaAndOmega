@@ -8,9 +8,9 @@ Completed Features:
 * Delete button that removes the associated card
 * Background colorizer
 * Font colorizer
+* Random colorizer
 
 Remaining features:
 * Styles
 
 Stretch Goals:
-* Color randomizer

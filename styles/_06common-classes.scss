@@ -1,0 +1,151 @@
+/*! Common Classes */
+
+/* Avatar */
+
+.avatar{
+    float: left;
+}
+
+.alignleft, .author-box{
+    &.avatar{
+        @include rem-fallback(margin-right, 2.4);
+    }
+}
+
+.alignright .avatar{
+    @include rem-fallback(margin-left, 2.4);
+}
+
+.comment .avatar{
+    @include rem-fallback(margin, 0, 1.6, 2.4, 0);
+}
+
+/* Genesis */
+
+.breadcrumb{
+    @include rem-fallback(margin-bottom, 2);
+}
+
+.archive-description, .author-box{
+    background-color: $test-color;
+    @include font-size($body-font-size);
+    @include rem-fallback(margin-bottom, 4);
+    @include rem-fallback(padding, 4);
+}
+
+.author-box-title{
+    @include font-size($body-font-size);
+    @include rem-fallback(margin-bottom, .4);
+}
+
+.archive-description, .author-box{
+    & .p:last-child{
+        @include rem-fallback(margin-bottom, 0);
+    }
+}
+
+/* Search Form */
+
+.search-form{
+    overflow: hidden;
+}
+
+.site-header .search-form{
+    float: right;
+    @include rem-fallback(margin-top, 1.2);
+}
+
+.entry-content, .site-header{
+    &.search-form{
+        width: 50%;
+    }
+}
+
+.genesis-nav-menu .search, .widget_search{
+    & input[type="submit"]{
+        border: 0;
+        clip: rect(0,0,0,0);
+        @include rem-fallback(height, .1);
+        @include rem-fallback(margin, -.1);
+        padding: 0;
+        position: absolute;
+        @include rem-fallback(width, .1);
+    }
+}
+
+/* Titles */
+
+.archive-title{
+    @include font-size($body-font-size +.4);
+}
+
+.entry-title{
+    @include font-size($body-font-size + 2);
+}
+
+.sidebar .widget-title a{
+    color: $accent-background;
+}
+
+.entry-title a:hover{
+    text-decoration: none;
+}
+
+.widget-title{
+    @include font-size($body-font-size + .2);
+    @include rem-fallback(margin-bottom, 2);
+}
+
+/* WordPress */
+
+a.aligncenter img{
+    display: block;
+    margin: 0 auto;
+}
+
+a.alignnone{
+    display: inline-block;
+}
+
+.alignleft{
+    float: left;
+    text-align: left;
+}
+
+.alignright{
+    float: right;
+    text-align: right;
+}
+
+a.alignleft, a.alignnone, a.alignright{
+    max-width: 100%;
+}
+
+img.centered, .aligncenter{
+    display: block;
+    @include rem-fallback(margin-bottom, 2.4);
+}
+
+img.alignnone, .alignnone{
+    @include rem-fallback(margin-bottom, 1.2);
+}
+
+a.alignleft, img.alignleft, .wp-caption.alignleft{
+    @include rem-fallback(margin, 0, 2.4, 2.4, 0);
+}
+
+a, img, .wp-caption{
+    &.alignright{
+        @include rem-fallback(margin, 0, 0, 2.4, 2.4);
+    }
+}
+
+.wp-caption-text{
+    @include font-size($body-font-size - .2);
+    font-weight: $strongweight;
+    text-align: center;
+}
+
+.entry-content p.wp-caption-text{
+    margin-bottom: 0;
+}

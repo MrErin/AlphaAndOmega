@@ -9,30 +9,36 @@ let idNum = 0
 const newCard = () => {
 	//create the card and add a class
 	const card = document.createElement('div')
-	card.classList = 'userCard'
+	card.classList = 'card'
 	card.setAttribute('id', 'card' + idNum)
     
 	//create the delete button
 	const deleteButton = document.createElement('button')
-	deleteButton.classList = 'deleteButton'
+	deleteButton.classList = 'btn'
 	deleteButton.textContent = 'Delete Card'
-	deleteButton.setAttribute ('id','button' + idNum)
 	deleteButton.onclick = function() {deleteCard(card.id)}
 	card.appendChild(deleteButton)
 	
 	// create bgcolor button
 	const bgColorPicker = document.createElement('input')
+	bgColorPicker.classList = 'picker'
 	bgColorPicker.setAttribute('type', 'color')
-	bgColorPicker.setAttribute('id', 'bgPicker' + idNum)
 	bgColorPicker.onchange = function() {bgColor(card.id, this.value)}
 	card.appendChild(bgColorPicker)
 
 	//create font color button
 	const fontColorPicker = document.createElement('input')
+	bgColorPicker.classList = 'picker'
 	fontColorPicker.setAttribute('type', 'color')
-	fontColorPicker.setAttribute('id', 'fontPicker' + idNum)
 	fontColorPicker.onchange = function() {fontColor(card.id, this.value)}
 	card.appendChild(fontColorPicker)
+	
+	//create a randomizer button
+	const randomizerButton = document.createElement('button')
+	randomizerButton.classList = 'btn'
+	randomizerButton.textContent = 'Randomize!'
+	randomizerButton.onclick = function() {randomizeCard(card.id)}
+	card.appendChild(randomizerButton)
 
 
 	//create the text and add it to the card
