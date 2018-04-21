@@ -309,6 +309,8 @@ img {
   padding: 10px 20px 10px 20px;
   border: solid #D6D6D6 5px;
   text-decoration: none;
+  text-align: center;
+  margin: auto;
 }
 
 .btn:hover {
@@ -318,17 +320,26 @@ img {
   border: solid #0D0D0D 5px;
 }
 
+.btn-delete {
+  background: red;
+  text-decoration: none;
+  color: #D6D6D6;
+  border: solid #D6D6D6 1px;
+  float: right;
+}
+
 .card {
   border: solid 1px #D6D6D6;
   padding: 5%;
-  border-radius: 50px;
+  border-radius: 10px;
   margin: 10px;
   float: left;
+  display: flex;
 }
 
 textarea {
-  background-color: #648500;
-  color: #D6D6D6;
+  background-color: #D6D6D6;
+  color: #0D0D0D;
   border-radius: 15px;
   font-family: Lato, sans-serif;
   font-size: 16px;
@@ -336,17 +347,40 @@ textarea {
   font-size: 1.6rem;
   line-height: 2.4rem;
   border: solid 1px #D6D6D6;
-  margin: auto;
-  padding: 20px;
+  margin-bottom: 15px;
 }
 
 .centered {
   margin: 0 auto;
+  text-align: center;
 }
 
 .wrapper {
   margin: 15px;
-  padding: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.test {
+  border: 5px solid red;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.innerwrap {
+  margin: 15px;
+  padding: 15px;
+}
+
+.border {
+  border: 1px solid #D6D6D6;
 }
 
 /* # Media Queries

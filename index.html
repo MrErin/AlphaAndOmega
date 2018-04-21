@@ -1,5 +1,6 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>My Awesome Page</title>
@@ -13,21 +14,24 @@
   <header></header>
 
   <div class="wrapper">
-<textarea class="centered" id="textForCard" rows="4" cols="50">
-  Enter text for the new card
-</textarea></div>
-<div class="wrapper">
-<button class="btn centered" onClick="newCard()">Create</button>
-</div>
-<div id="cardBox">
+    <div class="wrapper column centered">
+      <h2>Color Card Generator</h2>
+      <div class="wrapper column innerwrap">
+        <textarea id="textForCard" rows="4" cols="50">
+          Enter text for the new card
+        </textarea>
+        <button class="btn" onClick="newCard()">Create</button>
+      </div>
+    </div>
   </div>
-
+  <div id="cardBox">
+  </div>
   <footer></footer>
-
   <script src="./scripts/cardBuilder.js"></script>
   <script src="./scripts/cardDeleter.js"></script>
   <script src="./scripts/cardBGColorizer.js"></script>
   <script src="./scripts/cardFontColorizer.js"></script>
   <script src="./scripts/colorRandomizer.js"></script>
 </body>
+
 </html>
