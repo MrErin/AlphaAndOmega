@@ -1,4 +1,11 @@
-@mixin font-size($size: 1.6, $line: $size * 1.5){
+/*
+
+ Mixins
+
+*/
+
+
+@mixin font-size($size: 1.6, $line: $size * 1.5) {
     font-size: ($size * 10) + px;
     line-height: ($line * 10) + px;
     font-size: $size + rem;
@@ -6,11 +13,15 @@
 }
 
 @mixin selection {
-    ::-moz selection {@content;}
-    ::selection {@content;}
+    ::-moz selection {
+        @content;
+    }
+    ::selection {
+        @content;
+    }
 }
 
-@function strip-unit($num){
+@function strip-unit($num) {
     @return $num / ($num * 0 + 1);
 }
 
@@ -18,25 +29,20 @@
     $max: length($values);
     $pxValues: '';
     $remValues: '';
-    
     @for $i from 1 through $max {
         $value: strip-unit(nth($values, $i));
         $pxValues: #{$pxValues + $value * 10}px;
-        
         @if $i < $max {
             $pxValues: #{$pxValues + " "};
         }
     }
-    
     @for $i from 1 through $max {
         $value: strip-unit(nth($values, $i));
         $remValues: #{$remValues + $value}rem;
-        
         @if $i < $max {
             $remValues: #{$remValues + " "};
         }
     }
-    
     #{$property}: $pxValues;
     #{$property}: $remValues;
 }

@@ -27,6 +27,9 @@ package.json
 package-lock.json
 .eslintrc.js
 
+# Sass/Compass
+.sass-cache
+
 #other
 bower_components
 __pycache__
