@@ -39,3 +39,4 @@ obj
 *.db
 *.sqlite3
 .vscode
+config.rb

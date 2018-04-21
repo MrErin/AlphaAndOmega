@@ -26,9 +26,6 @@ body{
 	@include font-size($body-font-size);
 }
 
-// a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button, .gallery img{
-//     @include single-transition(all, 0.1s, ease-in-out);
-// }
 
 *{
     @include selection{
@@ -88,4 +85,53 @@ h6{
 img{
     height: auto;
     max-width: 100%;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: $base-text-color;
+    @include font-size($body-font-size);
+    background: $base-background;
+    padding: 10px 20px 10px 20px;
+    border: solid $base-text-color 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: $base-text-color;
+    text-decoration: none;
+    color: $base-background;
+    border: solid $base-background 5px;
+
+}
+
+.card {
+    border: solid 1px $base-text-color;
+    padding: 5%;
+    border-radius: 50px;
+    margin: 10px;
+    float: left;
+}
+
+textarea{
+    background-color: $accent-background;
+    color: $accent-text-color;
+    border-radius: 15px;
+    font-family: $body-font, sans-serif;
+    @include font-size($body-font-size);
+    border: solid 1px $base-text-color;
+    margin: auto;
+    padding: 20px;
+}
+
+.centered {
+     margin: 0 auto;
+}
+
+.wrapper{
+    margin: 15px;
+    padding: 5px;
+
 }

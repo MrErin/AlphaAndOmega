@@ -12,5 +12,10 @@ Completed Features:
 
 Remaining features:
 * Styles
+    * create separation between button area and text area in card
+    * group two color pickers together, with randomizer underneath
+    * put delete button at bottom of card or at top right
+    * textarea: centered, add font and background styling
+    * create button: add btn class
 
 Stretch Goals:
