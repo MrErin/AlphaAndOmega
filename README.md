@@ -2,7 +2,7 @@
 
 [Exercise requirements](https://github.com/nashville-software-school/the-vault/blob/master/ALPHAOMEGA.md)
 
-Completed Features:
+## Completed Features:
 
 * Create new cards, including classes for styling
 * Delete button that removes the associated card
@@ -18,9 +18,12 @@ Completed Features:
   * group two color pickers together, with randomizer underneath
   * add text to explain the color pickers
 
-Remaining features:
+## Remaining features:
 
+## Stretch Goals:
 
-Stretch Goals:
+## To run
 
-* wrap text if very long text is entered (after research this might require jQuery. Not sure I want to tackle that at the moment.)
+1. Clone the repo.
+2. From the command line, cd into the directory.
+3. Type ```hs -o``` into the command line.
