@@ -2,6 +2,8 @@
 
 [Exercise requirements](https://github.com/nashville-software-school/the-vault/blob/master/ALPHAOMEGA.md)
 
+**Project Status**: working
+
 ## Completed Features:
 
 * Create new cards, including classes for styling
